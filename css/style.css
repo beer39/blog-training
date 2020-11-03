@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400;500;600;700;800&display=swap");
+* {
+		padding: 0;
+		margin: 0;
+		border: 0;
+}
+
+*, *:before, *:after {
+		box-sizing: border-box;
+}
+
+:focus, :active {
+		outline: none;
+}
+
+a:focus, a:active {
+		outline: none;
+}
+
+nav, footer, header, aside {
+		display: block;
+}
+
+html, body {
+		height: 100%;
+		width: 100%;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 14px;
+		-ms-text-size-adjust: 100%;
+		-moz-text-size-adjust: 100%;
+		-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+		font-family: inherit;
+}
+
+input::-ms-clear {
+		display: none;
+}
+
+button {
+		cursor: pointer;
+}
+
+button::-moz-focus-inner {
+		padding: 0;
+		border: 0;
+}
+
+a, a:visited {
+		text-decoration: none;
+}
+
+a:hover {
+		text-decoration: none;
+}
+
+ul li {
+		list-style: none;
+}
+
+img {
+		vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+		font-size: inherit;
+		font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+		background-color: #E5E5E5;
+}
+
+.container {
+		max-width: 1440px;
+		margin: 0 auto;
+}
+
+h2, h3, h4 {
+		font-family: "Spectral SC", serif;
+		font-weight: 700;
+		color: #2E2F22;
+}
+
+a, p {
+		font-family: "Open Sans", sans-serif;
+}
+
+p {
+		color: #2E2F22;
+}
+
+a {
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: 400;
+		color: #2E2F22;
+}
+
+.btn {
+		border: 1px solid #202117;
+		border-radius: 10px;
+		font-weight: 400;
+		font-size: 16px;
+		padding: 12px 58px;
+		transition: 0.4s ease-out;
+}
+.btn:hover {
+		background-color: #D7D1C9;
+		border: 1px solid #D7D1C9;
+}
+
+.header {
+		background: url("../img/1/glavn.png") no-repeat center center;
+}
+.header-img {
+		cursor: pointer;
+}
+.header-block {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 5px;
+		padding-bottom: 495px;
+}
+.header-nav ul {
+		display: flex;
+}
+.header-nav ul li {
+		list-style: none;
+}
+.header-nav ul li:hover {
+		border-bottom: 1px solid #202117;
+}
+.header-nav ul li:not(:last-child) {
+		margin-right: 85px;
+}
+
+.main {
+		background-color: #fff;
+}
+.main-block {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+}
+.main-header {
+		margin-top: 85px;
+		display: flex;
+		justify-content: space-between;
+}
+.main-header h2 {
+		font-size: 36px;
+}
+.main-header select {
+		display: flex;
+		align-items: center;
+		font-weight: 400;
+		font-size: 16px;
+		font-family: "Open Sans", sans-serif;
+		padding: 12px 20px;
+		background: url(../img/1/down.png) no-repeat right #D7D1C9;
+		-webkit-appearance: none;
+		   -moz-appearance: none;
+		        appearance: none;
+		background-position-x: 162px;
+		background-position-y: 55%;
+		border-radius: 10px;
+		width: 203px;
+}
+.main-header select option {
+		font-size: 14px;
+}
+.main-blocks {
+		margin-top: 60px;
+		display: flex;
+		justify-content: space-between;
+}
+.main-blocks__two {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 120px;
+}
+.main-blocks__two .bg-img__one {
+		background: url("../img/1/block2img1.png") no-repeat;
+}
+.main-blocks__two .bg-img__two {
+		background: url("../img/1/block2img2.png") no-repeat;
+}
+.main-item {
+		max-width: 387px;
+}
+.main-item img {
+		border-radius: 10px;
+}
+.main-item h3 {
+		margin-top: 27px;
+		font-weight: 700;
+		font-size: 18px;
+}
+.main-item p {
+		margin-top: 15px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 26px;
+}
+.main-item__par {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 15px;
+		margin-bottom: 65px;
+}
+.main-item__par p {
+		color: rgba(46, 47, 34, 0.7);
+}
+.main-item__two {
+		width: 590px;
+		height: 552px;
+		display: flex;
+}
+.main-item__two h3 {
+		color: white;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 31px;
+}
+.main-item__two p {
+		color: white;
+		font-size: 18px;
+		line-height: 28px;
+}
+.main-item__parag p {
+		color: rgba(255, 255, 255, 0.7);
+		font-size: 16px;
+}
+.main-item__text {
+		width: 429px;
+		margin: 0 auto;
+		align-self: flex-end;
+}
+.main-button {
+		text-align: center;
+}
