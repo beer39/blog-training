@@ -16,7 +16,7 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400;500;600;700;800&display=swap');
 body {
   background-color: #E5E5E5;
@@ -42,6 +42,9 @@ a {
   font-size: 18px;
   font-weight: 400;
   color: #2E2F22;
+  &:hover {
+    border-bottom: 1px solid #202117;
+  }
 }
 .btn {
   border: 1px solid #202117;
@@ -51,8 +54,7 @@ a {
   padding: 12px 58px;
   transition: .4s ease-out;
   &:hover {
-    background-color: #D7D1C9;
-    border: 1px solid #D7D1C9;
+    background-color: rgba(215, 209, 201, .6);
   }
 }
 .header {
@@ -75,13 +77,9 @@ a {
       display: flex;
       li {
         list-style: none;
-        &:hover {
-          border-bottom: 1px solid #202117;
-        }
         &:not(:last-child){
           margin-right: 85px;
         }
-
       }
     }
   }
@@ -192,5 +190,158 @@ a {
   }
   &-button {
     text-align: center;
+  }
+  //ОБО МНЕ
+  &-units {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    h2 {
+      text-align: center;
+      margin-top: 115px;
+      margin-bottom: 65px;
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+  &-unit {
+    display: flex;
+    align-items: center;
+    img {
+      border-radius: 10px;
+    }
+    &__text {
+      margin-left: 40px;
+      max-width: 497px;
+      p {
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+    &__quote {
+      border-left: 3px solid #D7D1C9;
+      margin-left: 20px;
+      p {
+        margin-left: 20px;
+        line-height: 40px;
+        font-size: 30px;
+        font-style: italic;
+      }
+    }
+    //ПОРТФОЛИО
+    &__bg {
+      width: 387px;
+      height: 525px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 130px;
+       h3 {
+         margin-top: 140px;
+         font-size: 20px;
+         font-weight: 700;
+         line-height: 30px;
+       }
+      h4 {
+        margin-top: 44px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+      }
+      p {
+        margin-top: 17px;
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+
+    .unit-bg__one {
+      background: url("../img/1/image8.png") no-repeat center;
+    }
+    .unit-bg__two {
+      background: url("../img/1/image7.png") no-repeat center;
+      h3,h4,p {
+        color: #fff;
+      }
+    }
+    .unit-bg__three {
+      background: url("../img/1/image9.png") no-repeat center;
+    }
+  }
+  .unit-center {
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  //форма
+  &-units__background {
+    padding-bottom: 95px;
+  }
+  &-unit__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &-form {
+    background: url("../img/1/bgimagelastBlock.png") no-repeat left top;
+    border-radius: 10px;
+    width: 996px;
+    margin: 0 auto;
+    padding: 55px 0 65px;
+    &__name, &__email, &__textarea {
+      display: flex;
+      flex-direction: column;
+      label {
+        font-family: 'Spectral SC', serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 15px;
+      }
+      input {
+        border: 1px solid rgba(32, 33, 23, 1);
+        border-radius: 10px;
+        width: 407px;
+        background: rgba(255, 255, 255, 0.4);
+        box-sizing: border-box;
+        padding: 20px;
+        font-size: 16px;
+        &::placeholder {
+          font-size: 16px;
+        }
+      }
+      textarea {
+        border: 1px solid rgba(32, 33, 23, 1);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.4);
+        box-sizing: border-box;
+        padding: 20px;
+        font-size: 16px;
+        width: 837px;
+        height: 290px;
+        &::placeholder {
+          font-size: 16px;
+        }
+      }
+    }
+    &__email {
+      margin-left: 20px;
+    }
+    &__textarea {
+      margin-top: 25px;
+      margin-bottom: 36px;
+    }
+  }
+}
+.footer {
+  background: rgba(215, 209, 201, 1);
+  padding: 75px 0 95px;
+  display: flex;
+  justify-content: center;
+  a {
+    &:not(:last-child) {
+      margin-right: 120px;
+    }
   }
 }

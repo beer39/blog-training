@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400;500;600;700;800&display=swap");
 * {
 		padding: 0;
@@ -103,6 +103,9 @@ a {
 		font-weight: 400;
 		color: #2E2F22;
 }
+a:hover {
+		border-bottom: 1px solid #202117;
+}
 
 .btn {
 		border: 1px solid #202117;
@@ -113,8 +116,7 @@ a {
 		transition: 0.4s ease-out;
 }
 .btn:hover {
-		background-color: #D7D1C9;
-		border: 1px solid #D7D1C9;
+		background-color: rgba(215, 209, 201, 0.6);
 }
 
 .header {
@@ -137,9 +139,6 @@ a {
 }
 .header-nav ul li {
 		list-style: none;
-}
-.header-nav ul li:hover {
-		border-bottom: 1px solid #202117;
 }
 .header-nav ul li:not(:last-child) {
 		margin-right: 85px;
@@ -250,4 +249,151 @@ a {
 }
 .main-button {
 		text-align: center;
+}
+.main-units {
+		display: flex;
+		flex-direction: column;
+		max-width: 1200px;
+		margin: 0 auto;
+}
+.main-units h2 {
+		text-align: center;
+		margin-top: 115px;
+		margin-bottom: 65px;
+		font-size: 36px;
+		font-weight: 700;
+}
+.main-unit {
+		display: flex;
+		align-items: center;
+}
+.main-unit img {
+		border-radius: 10px;
+}
+.main-unit__text {
+		margin-left: 40px;
+		max-width: 497px;
+}
+.main-unit__text p {
+		margin-bottom: 30px;
+		font-size: 16px;
+		line-height: 26px;
+}
+.main-unit__quote {
+		border-left: 3px solid #D7D1C9;
+		margin-left: 20px;
+}
+.main-unit__quote p {
+		margin-left: 20px;
+		line-height: 40px;
+		font-size: 30px;
+		font-style: italic;
+}
+.main-unit__bg {
+		width: 387px;
+		height: 525px;
+		border-radius: 10px;
+		text-align: center;
+		margin-bottom: 130px;
+}
+.main-unit__bg h3 {
+		margin-top: 140px;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 30px;
+}
+.main-unit__bg h4 {
+		margin-top: 44px;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 28px;
+}
+.main-unit__bg p {
+		margin-top: 17px;
+		font-size: 16px;
+		line-height: 26px;
+}
+.main-unit .unit-bg__one {
+		background: url("../img/1/image8.png") no-repeat center;
+}
+.main-unit .unit-bg__two {
+		background: url("../img/1/image7.png") no-repeat center;
+}
+.main-unit .unit-bg__two h3, .main-unit .unit-bg__two h4, .main-unit .unit-bg__two p {
+		color: #fff;
+}
+.main-unit .unit-bg__three {
+		background: url("../img/1/image9.png") no-repeat center;
+}
+.main .unit-center {
+		justify-content: space-between;
+		align-items: stretch;
+}
+.main-units__background {
+		padding-bottom: 95px;
+}
+.main-unit__form {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+}
+.main-form {
+		background: url("../img/1/bgimagelastBlock.png") no-repeat left top;
+		border-radius: 10px;
+		width: 996px;
+		margin: 0 auto;
+		padding: 55px 0 65px;
+}
+.main-form__name, .main-form__email, .main-form__textarea {
+		display: flex;
+		flex-direction: column;
+}
+.main-form__name label, .main-form__email label, .main-form__textarea label {
+		font-family: "Spectral SC", serif;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 28px;
+		margin-bottom: 15px;
+}
+.main-form__name input, .main-form__email input, .main-form__textarea input {
+		border: 1px solid #202117;
+		border-radius: 10px;
+		width: 407px;
+		background: rgba(255, 255, 255, 0.4);
+		box-sizing: border-box;
+		padding: 20px;
+		font-size: 16px;
+}
+.main-form__name input::placeholder, .main-form__email input::placeholder, .main-form__textarea input::placeholder {
+		font-size: 16px;
+}
+.main-form__name textarea, .main-form__email textarea, .main-form__textarea textarea {
+		border: 1px solid #202117;
+		border-radius: 10px;
+		background: rgba(255, 255, 255, 0.4);
+		box-sizing: border-box;
+		padding: 20px;
+		font-size: 16px;
+		width: 837px;
+		height: 290px;
+}
+.main-form__name textarea::placeholder, .main-form__email textarea::placeholder, .main-form__textarea textarea::placeholder {
+		font-size: 16px;
+}
+.main-form__email {
+		margin-left: 20px;
+}
+.main-form__textarea {
+		margin-top: 25px;
+		margin-bottom: 36px;
+}
+
+.footer {
+		background: #d7d1c9;
+		padding: 75px 0 95px;
+		display: flex;
+		justify-content: center;
+}
+.footer a:not(:last-child) {
+		margin-right: 120px;
 }
